@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <navbar class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CONV.CALC</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">CALCULATOR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Weight.html">WEIGHT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kelvin.html">TEMPRATURE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </navbar>
+    <h1 class="">Weight Converter</h1>
+    <div class="container1">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="Weight.html">POUND</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link active" href="kg.html">KG</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="gram.html">GRAM</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="mg.html">MILLIGRAM</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="ounce.html">Ounces</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="tonne.html">TONNE</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="calc">
+        <div class="form-group">
+          <input id="kgInput" type="number" class="form-control" />
+        </div>
+
+        <div id="output">
+          <div class="cardd card1">
+            <h4>Grams:</h4>
+            <div id="gramsOutput"></div>
+          </div>
+
+          <div class="cardd card2">
+            <h4>POUND:</h4>
+            <div id="lbsOutput"></div>
+          </div>
+
+          <div class="cardd card3">
+            <h4>Ounces:</h4>
+            <div id="ozOutput"></div>
+          </div>
+          <div class="cardd card4">
+            <h4>TONNE:</h4>
+            <div id="tonneOutput"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("output").style.visibility = "hidden";
+    document.getElementById("kgInput").addEventListener("input", function (e) {
+      document.getElementById("output").style.visibility = "visible";
+      let kg = e.target.value;
+      document.getElementById("gramsOutput").innerHTML = kg * 1000;
+      document.getElementById("lbsOutput").innerHTML = kg * 2.20462;
+      document.getElementById("ozOutput").innerHTML = kg * 35.274;
+      document.getElementById("tonneOutput").innerHTML = kg / 1000;
+    });
+  </script>
+</html>

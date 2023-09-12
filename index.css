@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  body {background-color: #6f7987;
+    margin: 0;
+    padding: 0;
+  }
+
+  .containerr {
+    /* margin-top: px; */
+    width: 400px;
+    height: 75vh;
+    background: #e3f9ff;
+    margin-left: 37%;
+   
+  }
+  .calculator {
+    width: 100%;
+    height: 75vh;
+    background: #3a4452;
+    padding: 20px;
+   
+  }
+  .calculator form input {
+    border: 0;
+    outline: 0;
+    width: 17%;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 11px;
+  }
+
+  form .displayy {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+  }
+  form .displayy input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+  }
+  form input.equal {
+    width: 40%;
+    background-color: rgb(231, 142, 78);
+
+   
+  }
+  .calculator .operator{
+    background-color:rgb(231, 142, 78) ;
+  }
+  
+  h1 {
+    /* text-align: center; */
+    margin-left: 37%;
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(6, 6, 15);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 0px rgb(91, 91, 91);
+  }
+
+  form input.operator {
+    color: #e2eceb;
+  }
+  
+  nav{
+    margin-left: 37%;
+    
+  }
+  .navbar{
+    background-color:rgb(154, 160, 218) ;
+   
+  }
+  
+  .form-control {
+    width: 60%;
+    height: 30px;
+    margin-left: 16%;
+    margin-top: 40px;
+  }
+  .calc {
+    background-color: black;
+    width: 470px;
+    margin-left: 37%;
+    height: fit-content;
+    padding: 20px;
+  }
+  .cardd {
+    margin-top: 20px;
+    margin-left: 16%;
+    width: 60%;
+  }
+  .card1 {
+    background-color: rgb(232, 224, 112);
+  }
+  .card2 {
+    background-color: rgb(183, 248, 103);
+  }
+  .card3 {
+    background-color: rgb(112, 222, 232);
+  }
+  .card4 {
+    background-color: rgb(239, 124, 207);
+  }
+  @media (min-width: 900px) and (max-width: 1200px) {
+    .containerr{
+      margin-left: 32% ;
+    }
+    h1{
+      margin-left: 31% ; 
+    }
+    nav{
+      margin-left: 30%;
+    }
+    .calc{
+      margin-left: 30%;
+    }
+   
+  }
+
+  @media (min-width: 800px) and (max-width: 899px) {
+    .containerr{ 
+      margin-left: 26% ;
+    }
+    h1{
+      margin-left: 25% ; 
+    }
+    nav{
+      margin-left: 24%;
+    }
+    .calc{
+      margin-left: 24%;
+    }
+   
+  }
+  @media (min-width: 650px) and (max-width: 799px) {
+    .containerr{ 
+      margin-left: 23% ;
+    }
+    h1{
+      margin-left: 23% ; 
+    }
+    nav{
+      margin-left: 19%;
+    }
+    .calc{
+      margin-left: 19%;
+    }
+    .container1 h1{
+      margin-left: 19%;
+    }
+   
+  }
+
+  
+  @media (min-width: 600px) and (max-width: 649px) {
+    .containerr{
+      margin-left: 20% ;
+    }
+    h1{
+      margin-left: 21% ; 
+      
+    }
+    nav{
+      margin-left: 13%;
+    }
+    .calc{
+      margin-left: 13%;
+    }
+    .container1 h1{
+      margin-left: 13%;
+    }
+   
+  }
+  @media (min-width: 400px) and (max-width: 599px) {
+    .containerr{width: 300px;
+      margin-left: 19% ;
+      height: 300px;
+    }
+    .calculator {
+      height: 400px;
+    }
+    h1{font-size: 40px;
+      margin-left: 20% ; 
+    }
+    .calculator form input{
+      width: 15%;
+      height: 25px;
+    }
+    .calculator .equal{
+      width: 34%;
+    }
+    nav{
+      margin-left: 13%;
+    }
+    .calc{width: 300px;
+      margin-left: 14%;
+    }
+    .container1 h1{font-size: 40px;
+      margin-left: 17%;
+    }
+    nav ul li{
+      width: 70px;
+    }
+  }
+  
