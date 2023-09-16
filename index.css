@@ -216,3 +216,36 @@
     }
   }
   
+  @media (min-width: 300px) and (max-width: 399px) {
+    .containerr{width: 250px;
+      margin-left: 15% ;
+      height: 300px;
+    }
+    .calculator {
+      height: 400px;
+    }
+    h1{font-size: 40px;
+      margin-left: 14% ; 
+    }
+    .calculator form input{
+      width: 15%;
+      height: 25px;
+      margin-left: 6px;
+    }
+    .calculator .equal{
+      width: 33%;
+    }
+    nav{
+      margin-left: 13%;
+    }
+    .calc{width: 300px;
+      margin-left: 14%;
+    }
+    .container1 h1{font-size: 40px;
+      margin-left: 17%;
+    }
+    nav ul li{
+      width: 70px;
+    }
+  }
+  

@@ -40,55 +40,36 @@
         </div>
       </div>
     </navbar>
-    <h1 class="">Weight Converter</h1>
+    <h1 class="">TEMPRATURE</h1>
     <div class="container1">
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item">
-            <a class="page-link" href="Weight.html">POUND</a>
+            <a class="page-link" href="kelvin.html">KELVIN</a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="kg.html">KG</a>
+            <a class="page-link" href="celcius.html">CELCIUS</a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="gram.html">GRAM</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="mg.html">MILLIGRAM</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="ounce.html">Ounces</a>
-          </li>
-          <li class="page-item active">
-            <a class="page-link" href="tonne.html">TONNE</a>
+            <a class="page-link active" href="far.html">FAHRENHEIT</a>
           </li>
         </ul>
       </nav>
       <div class="calc">
         <div class="form-group">
-          <input id="tonneInput" type="number" class="form-control" />
+          <input id="fInput" type="number" class="form-control" />
         </div>
 
         <div id="output">
           <div class="cardd card1">
-            <h4>KG:</h4>
-            <div id="kgOutput"></div>
+            <h4>KELVIN:</h4>
+            <div id="kOutput"></div>
           </div>
           <div id="output">
-            <div class="cardd card1">
-              <h4>GRAM:</h4>
-              <div id="gramOutput"></div>
+            <div class="cardd card2">
+              <h4>CELCIUS:</h4>
+              <div id="degOutput"></div>
             </div>
-          </div>
-
-          <div class="cardd card2">
-            <h4>POUND:</h4>
-            <div id="lbsOutput"></div>
-          </div>
-
-          <div class="cardd card4">
-            <h4>OZ:</h4>
-            <div id="ozOutput"></div>
           </div>
         </div>
       </div>
@@ -98,15 +79,12 @@
 
   <script>
     document.getElementById("output").style.visibility = "hidden";
-    document
-      .getElementById("tonneInput")
-      .addEventListener("input", function (e) {
-        document.getElementById("output").style.visibility = "visible";
-        let tonne = e.target.value;
-        document.getElementById("kgOutput").innerHTML = tonne * 1000;
-        document.getElementById("gramOutput").innerHTML = tonne * 1e6;
-        document.getElementById("lbsOutput").innerHTML = tonne / 2205;
-        document.getElementById("ozOutput").innerHTML = tonne * 35270;
-      });
+    document.getElementById("fInput").addEventListener("input", function (e) {
+      document.getElementById("output").style.visibility = "visible";
+      let f = e.target.value;
+      document.getElementById("degOutput").innerHTML =
+        ((f - 32) * 5) / 9 + 273.15;
+      document.getElementById("kOutput").innerHTML = ((f - 32) * 5) / 9;
+    });
   </script>
 </html>
