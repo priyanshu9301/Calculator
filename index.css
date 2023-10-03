@@ -76,7 +76,7 @@
   }
   
   nav{
-    margin-left: 37%;
+    margin-left: 39%;
     
   }
   .navbar{
@@ -161,6 +161,9 @@
     .container1 h1{
       margin-left: 19%;
     }
+    .navclass{
+      margin-left: 25%;
+    }
    
   }
 
@@ -182,9 +185,16 @@
     .container1 h1{
       margin-left: 13%;
     }
+    form .displayy input{
+      height: 30px;
+      font-size: 18px;
+    }
+    .navclass{
+      margin-left: 25%;
+    }
    
   }
-  @media (min-width: 400px) and (max-width: 599px) {
+  @media (min-width: 401px) and (max-width: 599px) {
     .containerr{width: 300px;
       margin-left: 19% ;
       height: 300px;
@@ -214,9 +224,24 @@
     nav ul li{
       width: 70px;
     }
+    form .displayy input{
+      height: 30px;
+      font-size: 18px;
+    }
+    .pagination a{
+      width: 57px;
+      font-size: 12px;
+    }
+    .navclass{
+      margin-left: 15%;
+    }
+    .navclass a {width: 90px;
+      margi
+    }
+    
   }
   
-  @media (min-width: 300px) and (max-width: 399px) {
+  @media (min-width: 300px) and (max-width: 400px) {
     .containerr{width: 250px;
       margin-left: 15% ;
       height: 300px;
@@ -238,7 +263,7 @@
     nav{
       margin-left: 13%;
     }
-    .calc{width: 300px;
+    .calc{width: 250px;
       margin-left: 14%;
     }
     .container1 h1{font-size: 40px;
@@ -247,5 +272,28 @@
     nav ul li{
       width: 70px;
     }
+    .pagination a{
+      width: 50px;
+      font-size: 10px;
+    }
+    .pagination a~.inputsize{
+      width: 10px;
+    }
+    form .displayy input{
+      height: 30px;
+      font-size: 18px;
+    }
+    nav{
+      margin-left: 20px;
+    }
+    .navclass{
+      margin-left: 15%;
+    }
+    .navclass a {width: 85px;
+    }
+    
+    
   }
+  
+  
   
