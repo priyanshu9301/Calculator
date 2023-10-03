@@ -77,17 +77,13 @@
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
   <script>
     document.getElementById("output").style.visibility = "hidden";
-    document
-      .getElementById("kelvinInput")
-      .addEventListener("input", function (e) {
-        document.getElementById("output").style.visibility = "visible";
-        let k = e.target.value;
-        document.getElementById("degOutput").innerHTML = k - 273.15;
-        document.getElementById("fOutput").innerHTML =
-          ((k - 273.15) * 9) / 5 + 32;
-      });
+    document.getElementById("degInput").addEventListener("input", function (e) {
+      document.getElementById("output").style.visibility = "visible";
+      let c = e.target.value;
+      document.getElementById("kOutput").innerHTML = 273.15 + parseInt(c);
+      document.getElementById("fOutput").innerHTML = (c * 9) / 5 + 32;
+    });
   </script>
 </html>
